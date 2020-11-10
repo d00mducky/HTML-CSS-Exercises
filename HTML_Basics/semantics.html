@@ -5,5 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <!-- DIVs are used to organize html elements on a page but otherwise have no semantic meaning -->
+    <div class="no-semantic-meaning"></div>
+    <!-- HTML5 introduced custom divs with semantic meaning -->
+    <!-- the header tag represents elements that are introductory to the page -->
+    <header>
+      <h1>Logo</h1>
+      <!-- the nav tag refers to navigation elements -->
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Contacts</li>
+          <li>Projects</li>
+          <li>Sign Up</li>
+        </ul>
+      </nav>
+    </header>
+    <!-- the main tag organizes the main content of the page (e.g. between header and footer) -->
+    <main>
+      <!-- section is used to group together html content -->
+      <section>
+        <!-- where section refers to parts of a larger whole, articles are expected to be standalone objects -->
+        <article>
+          <h2>This is us.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium debitis
+            vitae nihil? Fugit id eligendi officia porro temporibus sequi doloremque.
+          </p>
+        </article>
+        <article>
+          <!-- you can use html5 semantic tags for things other than traditional website headers, for example -->
+          <header>
+            <h2>This is us.</h2>
+            <h3>A fun book about how we are floating in space.</h3>
+          </header>
+          <!-- tags that cannot be reused include things like main -->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium debitis
+            vitae nihil? Fugit id eligendi officia porro temporibus sequi doloremque.
+          </p>
+        </article>
+      </section>
+      <!-- the figure tag helps add explanation to an image or group of images -->
+      <figure>
+        <img src="" alt="" />
+        <!-- one thing figure allows us to do is add captions with figcatpion -->
+        <figcaption>This is a picture of a mountain.</figcaption>
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </figure>
+      <section class="gallery">
+        <h2>These are my images</h2>
+        <!-- divs are still important for grouping items where the larger semantic tags dont make sense -->
+        <div class="row1">
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+        <!-- the key is to use the html5 semantic tags to group larger portions of the page together -->
+        <div class="row2">
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+      </section>
+      <!-- the aside tag is used to group items that are bound to the side of a page (e.g. sidebar) -->
+      <aside></aside>
+      <!-- footer tag is used for elements that are typically bound to the bottom of the page -->
+    </main>
+    <footer>
+      <p>Created by Kyle Perra</p>
+      <p>Copyright literally never</p>
+      <li><a href="twitter.com/">Twitter</a></li>
+    </footer>
+  </body>
 </html>
