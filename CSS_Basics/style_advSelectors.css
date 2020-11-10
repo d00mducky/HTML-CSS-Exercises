@@ -1,0 +1,21 @@
+h1 {
+  color: coral;
+}
+/* CSS works top-down, meaning the h1 tag above was overwritten by the h1 tag below */
+/* the same isn't true for classes however, where .header still overwrites the below h1 */
+/* in order of priority there is 1: !important 2: style attribute directly on html element
+3: #IDs 4: .classes 5: tags (i.e. !important > style="color:red" > #target > .target > h1) */
+#head {
+  /* putting an !important tag below another will overwrie the top !important tag */
+  color: magenta !important;
+}
+.header {
+  /* here, the !important tag overwrites every other style listed */
+  /* avoid using the !important tag where possible */
+  color: coral !important;
+}
+h1 {
+  /* putting an !important tag here will have no affect, because having !important on a item with higher priority
+  will overwrite it, which is why the !important tag on the #head overwrites the !important tag on .header */
+  color: cornflowerblue !important;
+}
