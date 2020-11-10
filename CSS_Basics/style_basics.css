@@ -1,0 +1,13 @@
+/* everything that is an h3 will be affected */
+h3 {
+  color: cornflowerblue;
+}
+
+/* use the dot identifier to select classes */
+.first-title {
+  color: red;
+}
+/* use the # identifier to select IDs  */
+#youtube-link {
+  color: blue;
+}
