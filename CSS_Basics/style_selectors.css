@@ -1,0 +1,50 @@
+/* its generally not recommended to use styles on general html elements, but rather to utilize classes and IDs */
+h1 {
+  /* color: cornflowerblue; */
+}
+/* selects only the h1 tags with the class random */
+.random h1 {
+  color: yellow;
+}
+
+/* selects everything on the page */
+/* can be used to get rid of any kind of styling  */
+/* that elements may be initialized with (e.g. font size, font family, padding) */
+* {
+  font-size: 20px;
+}
+/* you can target elements below a specified class */
+/* targets the ul element below .my-list */
+.my-list + ul {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* gets rid of the bullet points */
+  list-style: none;
+}
+/* targets unordered lists that have li element tags inside of them */
+/* will style-ize the entire ul and all elements contained within (even non ul and li tags) */
+ul > li {
+  color: fuchsia;
+}
+
+/* the same can be accomplished with classes or IDs and any other identifier */
+.nav-links > li {
+  color: orange;
+}
+
+.nav-links {
+  color: blue;
+}
+
+/* this will style only the a tags (links) within li elements with the class .nav-links */
+.nav-links li a {
+  color: greenyellow;
+}
+/* select an element within a specific position of a group link a list */
+.links li:nth-child(4) {
+  color: red;
+}
+
+/* targets the second .links element (i.e. the second html element with the class .links) */
+.links:nth-child(2) {
+  color: aqua;
+}
