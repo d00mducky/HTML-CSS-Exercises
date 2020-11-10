@@ -20,3 +20,31 @@ h1 {
   /* gets rid of the bullet points */
   list-style: none;
 }
+/* targets unordered lists that have li element tags inside of them */
+/* will style-ize the entire ul and all elements contained within (even non ul and li tags) */
+ul > li {
+  color: fuchsia;
+}
+
+/* the same can be accomplished with classes or IDs and any other identifier */
+.nav-links > li {
+  color: orange;
+}
+
+.nav-links {
+  color: blue;
+}
+
+/* this will style only the a tags (links) within li elements with the class .nav-links */
+.nav-links li a {
+  color: greenyellow;
+}
+/* select an element within a specific position of a group link a list */
+.links li:nth-child(4) {
+  color: red;
+}
+
+/* targets the second .links element (i.e. the second html element with the class .links) */
+.links:nth-child(2) {
+  color: aqua;
+}
