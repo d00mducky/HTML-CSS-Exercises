@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- title of the web page, takes up the header row of the search results -->
+    <title>
+      Kyle Perra | Software Developer, Professional Rice Cooker Operator and More
+    </title>
+    <!-- meta description of the webpage, takes up the footnote below header row of the search results -->
+    <meta
+      name="description"
+      content="This is the greatest website in all of the eniter world. Dont ask."
+    />
+    <!-- unicode for western keyboard layouts -->
+    <meta charset="utf-8" />
+    <!-- allows webcrawlers to find the webpage quicker and specifies whether to be shown in search results -->
+    <meta name="robots" content="index,follow" />
+    <!-- icon tag in the web page tabs -->
+    <link rel="icon" href="img/among_us_player_white_icon_156940.ico" />
+    <!-- provides some scaling funcitonality for mobile devices and variable screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <!-- importance matters for h1 -> h6 -- h1 tags should be structured that they show up in search results -->
+    <h1>hello there</h1>
+    <!-- some example text markup tags -->
+    <p>hello there, <small> this could be just normal text</small></p>
+    <p>hello there, <mark> this could be just normal text</mark></p>
+    <p>hello there, <em> this could be just normal text</em></p>
+    <p>hello there, <i> this could be just normal text</i></p>
+    <p>hello there, <strong> this could be just normal text</strong></p>
+    <p>hello there, this could be just normal text</p>
+    <!-- adding an image to the webpage  -->
+    <img
+      width="400"
+      height="400"
+      src="img/pexels-eberhard-grossgasteiger-572897.jpg"
+      alt=""
+    />
+    <!-- adding a video to the webpage, note that 'controls' attribute embeds playback controls into the video -->
+    <!-- and that 'autoplay' configures the video to play automatically on load  -->
+    <!-- adding a source to our video tag can be as simple as adding the attribute 'src="thesource"' -->
+    <!-- or add multiple sources like below to handle different device capabilities -->
+    <video autoplay controls width="400" height="400">
+      <source src="img/video.mp4" type="video/mp4" />
+      <source src="img/video.mp4" type="video/webm" />
+      <source src="img/video.mp4" type="video/ogg" />
+    </video>
+    <!-- anchor tags are used for website links  -->
+    <!-- note the target attribute allows the developer to specify how the link is opened (e.g. new tab) -->
+    <!-- you can embed links within links, like below to create the clickable icon link -->
+    <a
+      target="_blank"
+      href="https://www.youtube.com/watch?v=66SDKzLAM0I&list=PLJDl78K3ATE07zb8THQzbTRIVg8GymoGe&index=8&t=452s"
+      ><img src="img/among_us_player_white_icon_156940.ico"
+    /></a>
+    <!-- containing multiple items within a single form treats the items as part of one larger whole -->
+    <!-- autocomplete attribute can be applied to the whole form or individual inputs, removes -->
+    <!-- cached dropdown on user inputs -->
+    <form autocomplete="off" action="">
+      <!-- when you specify the id that the label refers to, makes the form more accessible -->
+      <label for="user">Username</label>
+      <!-- only items with the name attribute will be submited through from actions  -->
+      <!-- placeholder provides an initial value that is automatically cleared on user input  -->
+      <!-- required attribute forces this input before submission -->
+      <input required placeholder="Hello friend!" name="user" type="text" id="user" />
+      <label>Email</label>
+      <!-- specifying type email will provide input validation (i.e. will not accept input other than emails) -->
+      <input minlength="4" maxlength="50" name="email" type="email" />
+      <!-- use select for creating dropdowns and option for adding items to the dropdown  -->
+      <select name="products" id="product">
+        <!-- when the form is submitted, only whats stored in the value attribute will be sent -->
+        <option value="Macbook2018">Macbook</option>
+        <option value="iPhone10s">iPhone</option>
+      </select>
+      <!-- larger text input  -->
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <form>
+        <!-- radio clickable buttons are another type of input  -->
+        <input type="radio" name="products" value="prod1" />
+        <input type="radio" name="products" value="prod2" />
+      </form>
+      <!-- with the type submit attribute, selecting this button will clear the forms and attempt to send form data -->
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- lists  -->
+    <!-- unordered list  -->
+    <ul>
+      <!-- unordered list items are denoted with a bullet point  -->
+      <li>Home</li>
+      <li>Contact</li>
+    </ul>
+    <!-- ordered list items are denoted in order (i.e. 1, 2, 3, etc) -->
+    <ol>
+      <li>Home</li>
+      <!-- lists can be embedded  -->
+      <ol>
+        <li>Chp 1</li>
+        <li>Chp 2</li>
+      </ol>
+      <!-- can add links to list items || the '/' will always direct the webpage to home directory -->
+      <li><a href="/html-css/html-basics/index.html">Home</a></li>
+    </ol>
+  </body>
+</html>
