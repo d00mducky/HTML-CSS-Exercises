@@ -29,7 +29,9 @@ by the root element, html (i.e. 16px in the case of font size) */
 }
 
 /* IMPORTANT: in practice, we would overwrite html to have a font-size of 62.5%, which then makes the multiplications against it 
-very evenly distributed (e.g. 62.5% * 1rem = 10px || 62.5% * 1.5rem = 15px || etc. ) */
+very evenly distributed (e.g. 62.5% * 1rem = 10px || 62.5% * 1.5rem = 15px || etc. ) 
+
+NOTE: this also improves accessibility, where a user will be able to adjust font sizing through their browser */
 
 html {
   font-size: 62.5%;
