@@ -1,0 +1,26 @@
+/* in chrome dev tools, when inspecting elements, the orange border represents margin, 
+whereas the green borders represent padding. HTML elements are given specific properties 
+when they are placed into the webpage, margin and padding included among them  */
+
+/* adding margins this way will place the 100px margin on all sides */
+/* margin adds space on the outside of the elemnt selected, whereas padding 
+adds space to the inside of the element  */
+
+button {
+  margin: 100px;
+  padding: 50px;
+  /* applying custom padding on each side of the element is possible when outlined in 
+  this order:  top, right, bottom, left */
+  padding: 50px, 20px, 0px, 25px;
+  /* alternatively you can use padding-top, padding-left, etc.  */
+  padding-top: 50px;
+  padding-left: 52px;
+}
+
+/* padding directly increases the size of the element itself, whereas margin keeps the element
+the same size while increasing space around the element  */
+
+h1 {
+  background-color: crimson;
+  padding: 100px;
+}
