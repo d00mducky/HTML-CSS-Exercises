@@ -1,0 +1,26 @@
+/* The box model refers to how HTML is organized, wherein each element 
+has a: margin, border, padding, and then the element itself, in that order  */
+
+div {
+  /* background-color applies to the background (element + padding) and 
+  color applies to text within the element */
+  background-color: blanchedalmond;
+  color: white;
+  width: 100%;
+  /* because padding applies extra space to the area surrounding the element, it adds more space than we initially 
+  might have intended, with our width applied above, for example */
+  /* this padding will actually add 20px to our element width which was already at 
+  100%, stretching the screen and adding x-axis scroll bars (YUCKKKK) */
+  padding: 20px;
+  margin: 20px;
+}
+
+/* the fix for this is to overwrite the styles applied to HTML elements automatically with the * identifier  */
+this allows the developer to set * {
+  margin: 0;
+  padding: 0;
+  /* by default, box-sizing is set to content-box, where width and height (and min/max) properties 
+  only apply to the content, not the margins or padding */
+  /* box-sizing applies these attributes to the content and its whole 'box' (i.e. the margin, padding, and content) */
+  box-sizing: border-box;
+}
