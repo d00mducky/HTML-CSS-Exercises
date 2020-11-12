@@ -1,0 +1,34 @@
+/* html elements like h1 or p have a display type of block, which means they'll take up the 
+enitre width and force a line break for any subsequent elements (i.e. forces other items below it) */
+
+/* NOTE: add these * and html properties in by default for best practice */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* some html elements have a display type of in-line, which does not take up 
+more space than the element itself and does not force a line break, e.g. a and img tags */
+
+a {
+  background: lightblue;
+  /* NOTE: you cannot add height and width to in-line elements */
+  height: 10rem;
+  width: 10rem;
+  /* NOTE: margin works, but not for the top and bottom */
+  margin: 10rem;
+
+  /* IMPORTANT: chance the way these elements behave with the display attribute */
+  display: block;
+}
+
+/* inLine-block allows the top and bottom margins, padding, height and width properties  */
+a {
+  display: inline-block;
+  background: lightblue;
+}
