@@ -1,0 +1,40 @@
+/* there are issues with using pixels with regards to accessibility, where setting the pixel size of text for example,
+forces that text to remain at that size irrespective of how a user's browser may be configured (like having larger text sizes)
+
+Additionally, its not a great idea to have these set values with regards to responsiveness on multi-sized devices */
+/* NOTE: the default font-size for html is set to 16px !! Which means we need to overwrite this value to improve accessibility */
+.exercise-six {
+  font-size: 20px;
+}
+
+.exercise-six div {
+  font-size: 40px;
+}
+
+/* an alternative to pixels is EMs, where 1em === 16px */
+.exercise-six {
+  font-size: 1em;
+}
+
+/* be careful using em however, as it actually multiplies against parent elements, so below 
+the font-size would actually be 16px (default html) * 1em * 1.5em */
+.exercise-six div {
+  font-size: 1.5em;
+}
+
+/* FORTUNATELY we dont really use anything but pixels and REM, which unlike EM, only multiplies 
+by the root element, html (i.e. 16px in the case of font size) */
+.exercise-six div {
+  font-size: 1rem;
+}
+
+/* IMPORTANT: in practice, we would overwrite html to have a font-size of 62.5%, which then makes the multiplications against it 
+very evenly distributed (e.g. 62.5% * 1rem = 10px || 62.5% * 1.5rem = 15px || etc. ) */
+
+html {
+  font-size: 62.5%;
+}
+
+.exercise-six {
+  font-size: 1.5rem;
+}
