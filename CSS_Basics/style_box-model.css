@@ -16,7 +16,7 @@ div {
 }
 
 /* the fix for this is to overwrite the styles applied to HTML elements automatically with the * identifier  */
-this allows the developer to set * {
+* {
   margin: 0;
   padding: 0;
   /* by default, box-sizing is set to content-box, where width and height (and min/max) properties 
