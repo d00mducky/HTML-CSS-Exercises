@@ -1,5 +1,6 @@
 /* there are issues with using pixels with regards to accessibility, where setting the pixel size of text for example,
-forces that text to remain at that size irrespective of how a user's browser may be configured (like having larger text sizes)
+forces that text to remain at that size irrespective of how a user's browser may be configured 
+(like having larger text sizes)
 
 Additionally, its not a great idea to have these set values with regards to responsiveness on multi-sized devices */
 /* NOTE: the default font-size for html is set to 16px !! Which means we need to overwrite this value to improve accessibility */
