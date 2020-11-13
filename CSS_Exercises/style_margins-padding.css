@@ -17,8 +17,8 @@ button {
   padding-left: 52px;
 }
 
-/* padding directly increases the size of the element itself, whereas margin keeps the element
-the same size while increasing space around the element  */
+/* padding directly increases the size of the element itself, whereas margin keeps 
+the element the same size while increasing space around the element  */
 
 h1 {
   background-color: crimson;
