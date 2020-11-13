@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- IMPORTANT: here, we specify our media query directly on the html tag to allow us to have multiple stylesheets
+    for all the different devices we want to cover. -->
+    <link rel="stylesheet" href="mobile-style.css" media="(max-width: 500px)" />
+    <link rel="stylesheet" href="tablet-style.css" media="(max-width: 1000px)" />
+    <link rel="stylesheet" href="desktop-style.css" media="(max-width: 1500px)" />
     <title>Document</title>
   </head>
   <body>
