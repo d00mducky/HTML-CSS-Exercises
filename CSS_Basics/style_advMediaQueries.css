@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* IMPORTANT: as we've learned, we can set content to take up the enitre screen as below:  
+
+html,
+body {
+  height: 100%;
+}
+div {
+  height: 100%;
+  background: cadetblue;
+}
+
+*/
+
+/* BUT! There's a better way: viewport height (vh) and viewport width (vw) ! */
+
+div {
+  background: teal;
+  height: 100vh;
+  font-size: 2.4rem;
+}
+
+/* even when content is nested, using vh or vw will perform irrespective of its container 
+
+div h2 {
+  height: 50vh;
+}
+
+*/
+
+/* IMPORTANT! To prevent overflow, because of this nature -- use min-height on containers like so :  
+
+div {
+  background: teal;
+  min-height: 50vh;
+}
+
+*/
+
+/* IMPORTANT: viewport width (vw) can be used when we want a nested element to stretch via the 
+viewport size, not its container 
+
+
+div {
+  background: blue;
+  width: 50%;
+}
+
+div h2 {
+  background: cadetblue;
+  width: 100vw;
+}
+
+*/
+
+/* IMPORTANT! We can use viewport width (vw) to create responsive text! Like so :  
+NOTE: this will dynamically alter the font size each time you adjust the viewport
+
+div {
+  font-size: calc(2.4rem + 0.5vw);
+}
+
+*/
+
+/* IMPORTANT! Gain more control over media queries by specifying both max and min width
+
+@media (min-width: 500px) and (max-width: 1500px) {
+  body {
+    background: lightgreen;
+  }
+
+  Placing the text within this query, we've locked out the ability to change font size outside of our max / min limits
+  div {
+    font-size: calc(2.4rem + 0.5vw);
+  }
+
+  html {
+    font-size: 50%;
+  }
+}
+
+*/
