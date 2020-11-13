@@ -7,9 +7,9 @@ h1 {
   color: yellow;
 }
 
-/* selects everything on the page */
-/* can be used to get rid of any kind of styling  */
-/* that elements may be initialized with (e.g. font size, font family, padding) */
+/* selects everything on the page
+ can be used to get rid of any kind of styling  
+ that elements may be initialized with (e.g. font size, font family, padding) */
 * {
   font-size: 20px;
 }
