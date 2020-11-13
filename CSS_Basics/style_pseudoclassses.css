@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button {
+  padding: 2rem 4rem;
+  /* adds a clickable pointer cursor */
+  cursor: pointer;
+}
+
+/* pseudoclasses like :hover allow the developer to style content in reference to user inputs like cursor hover */
+button:hover {
+  background: lightblue;
+}
+
+/* :focus adds style when an item is pressed */
+button:focus {
+  background: green;
+}
+
+/* pseudo elements can be used to add additional content to the page with CSS */
+h1::after {
+  content: 'me';
+}
+
+/* this technique isnt usually used to add content however, but rather to style elements later programatically */
+h1::below {
+  content: 'me';
+}
