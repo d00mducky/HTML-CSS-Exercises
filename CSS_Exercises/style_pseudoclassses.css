@@ -14,7 +14,8 @@ button {
   cursor: pointer;
 }
 
-/* pseudoclasses like :hover allow the developer to style content in reference to user inputs like cursor hover */
+/* pseudoclasses like :hover allow the developer to style content in reference 
+to user inputs like cursor hover */
 button:hover {
   background: lightblue;
 }
