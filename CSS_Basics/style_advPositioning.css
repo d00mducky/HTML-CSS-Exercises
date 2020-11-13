@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* because there is no content between the div container, the background color will not appear */
+/* NOTE: if we set the html and body height however, then these items will appear, as without content the html body height 
+defaults to zero */
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  background: cadetblue;
+  width: 80%;
+  height: 80%;
+  /* margin auto will place an item within the middle of its container */
+  margin: auto;
+  /* adding position: relative to a container will force all other content to move relative to its boundaries */
+  position: relative;
+}
+
+.box1,
+.box2,
+.box3 {
+  width: 20%;
+  height: 20%;
+  background: crimson;
+}
+
+.box2 {
+  background: darkgray;
+  /* transform translate works with content of any position type */
+  /* because here position is static this code sends .box2 to exactly 50% of its total size left and up
+  the exact center of its container */
+  transform: translate(-50%, -50%);
+}
+
+.box3 {
+  background: darkgreen;
+  /* IMPORTANT: you can also use position relative to move items relative to their origin position: 
+  
+  position: relative;
+  top: 20rem;
+  bottom: 20rem;
+  
+  */
+  /* IMPORTANT: fixed positioning forces the content to remain in the exact same location on the page irrespective of 
+  scrolling or any other user manipulation
+
+  position: fixed;
+
+  */
+
+  /* IMPORTANT: sticky positioning can force content to remain within a specified region of the page when scrolling or
+  moving around and will otherwise remain in its original position on the page. One popular example of this is with 
+  nav bars that dont start on the page top, but will fix itself to the top when scrolling / moving around  
+  
+  NOTE: the code below will set content to stick to the top of the page when scrolling:
+
+  position: sticky;
+  top: 0%;
+
+  */
+}
+
+.box1 {
+  /* the default position attribute is static, where content depends on its container */
+  /* using absolute positioning releases the content's dependence on container(s) */
+  position: absolute;
+  /* the top, left, bottom, and right attributes are available to content utilizing absolute positioning */
+  /* bottom: 0rem;
+  left: 0rem; */
+  right: 0%;
+  /* you can use percentages to move content to relative screen locations */
+  top: 0%;
+  /* transform translate() allows the developer to specify content to a relative screen location irrespective of any
+  conflicting properties (like the .box3 width and height above). */
+
+  /* IMPORTANT: the code below can be used to set content to the exact center:
+  
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+              OR
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  
+  */
+}
