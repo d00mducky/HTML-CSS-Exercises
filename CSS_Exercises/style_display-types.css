@@ -11,7 +11,6 @@ enitre width and force a line break for any subsequent elements (i.e. forces oth
 html {
   font-size: 62.5%;
 }
-
 /* some html elements have a display type of in-line, which does not take up 
 more space than the element itself and does not force a line break, e.g. a and img tags */
 
