@@ -15,7 +15,8 @@ h1 {
   color: coral !important;
 }
 h1 {
-  /* putting an !important tag here will have no affect, because having !important on a item with higher priority
-  will overwrite it, which is why the !important tag on the #head overwrites the !important tag on .header */
+  /* putting an !important tag here will have no affect, because having !important on a item with 
+  higher priority will overwrite it, which is why the !important tag on the #head overwrites the !important 
+  tag on .header */
   color: cornflowerblue !important;
 }
