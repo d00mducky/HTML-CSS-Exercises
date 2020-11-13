@@ -11,7 +11,7 @@ button {
   /* border: 0.3rem dotted blue; */
   color: blueviolet;
   font-size: 2.4rem;
-  /* used to force boxes into circles || 50% is a perfect circle */
+  /* used to force boxes into circles && 50% is a perfect circle */
   border-radius: 1rem;
   /* you can specify a specific corner */
   border-top-left-radius: 2rem;
