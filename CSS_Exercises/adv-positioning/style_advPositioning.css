@@ -9,8 +9,8 @@ html {
 }
 
 /* because there is no content between the div container, the background color will not appear */
-/* NOTE: if we set the html and body height however, then these items will appear, as without content the html body height 
-defaults to zero */
+/* NOTE: if we set the html and body height however, then these items will appear, as without 
+content the html body height defaults to zero */
 html,
 body {
   height: 100%;
