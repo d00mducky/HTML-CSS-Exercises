@@ -16,8 +16,8 @@ h1 {
   font-size: 4.8rem;
 }
 
-/* this media tag will apply the styling within once the device screen max-width is below the given argument, 
-here it would be 500px */
+/* this media tag will apply the styling within once the device screen max-width is 
+below the given argument, here it would be 500px */
 @media (max-width: 500px) {
   body {
     background: rgb(116, 175, 175);
