@@ -7,8 +7,8 @@ div {
   background-color: blanchedalmond;
   color: white;
   width: 100%;
-  /* because padding applies extra space to the area surrounding the element, it adds more space than we initially 
-  might have intended, with our width applied above, for example */
+  /* because padding applies extra space to the area surrounding the element, it adds more 
+  space than we initially might have intended, with our width applied above, for example */
   /* this padding will actually add 20px to our element width which was already at 
   100%, stretching the screen and adding x-axis scroll bars (YUCKKKK) */
   padding: 20px;
