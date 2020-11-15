@@ -9,10 +9,11 @@ html {
 }
 
 .container {
-  height: 50vh;
   border: 3px solid black;
   /* allows the content to stretch according to screen size (responsive) */
   display: flex;
+
+  /************** PARENT ATTRIBUTES AND FLEX BOX MANIPULATIONS *****************/
   /* allows the developer to specify how the items are orientated, defaults to column
     e.g. :
     flex-direction: row-reverse;
@@ -52,29 +53,71 @@ html {
   align-items: baseline;
 
   NOTE IMPORTANT! : when flex-direction is column (default) align items works on the x axis and justify-content works vertically
+
+  IMPORTANT! align-content can be used similarly to align items and justify content for when items are wrapped
+  e.g. :
+    align-content: stetch;
+    align-content: flex-start;
+    align-content: flex-end;
   */
+
+  /************** CHILD ATTRIBUTES AND FLEX BOX MANIPULATIONS *****************/
 }
 
 .box {
   height: 10rem;
   width: 10rem;
+  /* by setting this property, every box would be equally proportioned on the screen, with responsiveness
+  flex-grow: 1;
+  */
+  /* instead of using width, we can use flex-basis like so:
+  NOTE: when flex-basis is set, the flex-wrap display property will work normally */
+  flex-basis: 50rem;
+
+  /* NOTE IMPORTANT !! : a good flexbox boilerplate:
+  1 grow, 1 shring, 20rem flex-basis :
+  flex: 1 1 20rem
+  */
 }
 
 .box1 {
   background: blue;
+  /* As long as you have a parent container with display: flex you can order items with the order attribute */
+  order: 1;
+  /* this forces content to take up all of the available space, and adds responsiveness
+  NOTE: this property will not work with flex-wrap */
+  /* flex-grow: 1; */
 }
 .box2 {
   background: blueviolet;
+  /* then changing the position of items is as simple as changing their respective order */
+  order: 5;
+  /* we can then make box2 take up twice as much room as box1 like so: */
+  /* flex-grow: 2; */
 }
 .box3 {
   background: yellowgreen;
+  order: 3;
+  /* by default flex-shrink: is set to 1
+  NOTE: setting, this property to 0 disallows the content to shrink and it will remain at its flex-basis */
+  flex-shrink: 0;
 }
 .box4 {
   background: tomato;
+  order: 4;
+  /* use align-self to manipulate content individually :
+  e.g.
+  align-self: flex-start;
+  align-self: center;
+  align-self: left;
+  */
+  align-self: center;
 }
 .box5 {
   background: whitesmoke;
+  order: 2;
 }
 .box6 {
   background: violet;
+  order: 6;
 }
