@@ -7,3 +7,74 @@
 html {
   font-size: 62.5%;
 }
+
+.container {
+  height: 50vh;
+  border: 3px solid black;
+  /* allows the content to stretch according to screen size (responsive) */
+  display: flex;
+  /* allows the developer to specify how the items are orientated, defaults to column
+    e.g. :
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  */
+  /* NOTE: will force content in-line or down depending on screen size, easy responsive design
+    flex-wrap: wrap;
+  */
+  /* wrap reverse will force content in-line or up
+    e.g. :
+    flex-wrap: wrap-reverse;
+  */
+  /* justify content allows the developer to specify several ways content is displayed
+  e.g. :
+  will place items in the center of the container horizontally
+  justify-content: center;
+  when used with :
+  align-items: center
+  will center content both vertically and horizontally
+
+  also possible:
+
+  puts space between each item
+  justify-content: space-evenly;
+  puts content at the end with flex responsiveness
+  justify-content: flex-end;
+  puts content at the start with flex responsiveness
+  justify-content: flex-start;
+  puts content at the left
+  justify-content: left;
+
+  IMPORTANT: align-items can be used to perform manipulations on content like :
+  stretches content to fit the container
+  align-items: stretch;
+  places all content on the same line
+  align-items: baseline;
+
+  NOTE IMPORTANT! : when flex-direction is column (default) align items works on the x axis and justify-content works vertically
+  */
+}
+
+.box {
+  height: 10rem;
+  width: 10rem;
+}
+
+.box1 {
+  background: blue;
+}
+.box2 {
+  background: blueviolet;
+}
+.box3 {
+  background: yellowgreen;
+}
+.box4 {
+  background: tomato;
+}
+.box5 {
+  background: whitesmoke;
+}
+.box6 {
+  background: violet;
+}
